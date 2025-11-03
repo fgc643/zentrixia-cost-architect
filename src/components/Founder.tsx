@@ -1,4 +1,4 @@
-import founderImage from "@/assets/founder.jpg";
+import founderImage from "@/assets/flavio-silva.jpeg";
 
 export const Founder = () => {
   return (
