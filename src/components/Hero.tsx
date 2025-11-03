@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Linkedin } from "lucide-react";
+import { ArrowRight, MessageCircle, Linkedin, Cpu, Server, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import { TechGrid } from "./TechGrid";
 
 export const Hero = () => {
   return (
@@ -23,19 +24,28 @@ export const Hero = () => {
       {/* Scan Lines Effect */}
       <div className="absolute inset-0 scan-lines opacity-50 pointer-events-none z-0" />
       
+      {/* Tech Grid */}
+      <TechGrid />
+      
+      {/* Floating Tech Icons */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Cpu className="absolute top-20 left-10 w-8 h-8 text-primary/20 animate-float" style={{ animationDelay: '0s' }} />
+        <Server className="absolute top-40 right-20 w-10 h-10 text-primary/20 animate-float" style={{ animationDelay: '1s' }} />
+        <Shield className="absolute bottom-32 left-20 w-9 h-9 text-primary/20 animate-float" style={{ animationDelay: '2s' }} />
+        <Cpu className="absolute bottom-20 right-32 w-7 h-7 text-primary/20 animate-float" style={{ animationDelay: '1.5s' }} />
+      </div>
+      
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto space-y-8 animate-fade-in">
         {/* Logo */}
         <div className="space-y-4 animate-fade-in-down">
           <div className="relative inline-block">
-            <span className="text-5xl md:text-6xl absolute -top-8 left-1/2 -translate-x-1/2 animate-float">
-              👑
-            </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-gradient-gold glow-text">
-              ZENTRIXIA
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-gradient-gold glow-text relative">
+              <span className="absolute -inset-4 bg-gradient-to-r from-transparent via-primary/20 to-transparent blur-2xl" />
+              <span className="relative">ZENTRIXIA</span>
             </h1>
           </div>
-          <p className="text-xl md:text-2xl text-silver italic tracking-wider">
+          <p className="text-xl md:text-2xl text-silver italic tracking-wider font-light">
             Elite. Unrivaled. Yours.
           </p>
         </div>

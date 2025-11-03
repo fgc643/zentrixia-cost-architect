@@ -4,8 +4,12 @@ import { Mail, Phone, MapPin, Linkedin, MessageCircle, Calendar } from "lucide-r
 export const Contact = () => {
   return (
     <section className="max-w-4xl mx-auto px-4 py-20">
-      <div className="bg-card/30 backdrop-blur-sm border-2 border-primary rounded-3xl p-8 md:p-12 lg:p-16 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gold mb-8">
+      <div className="relative bg-card/30 backdrop-blur-sm border-2 border-primary rounded-3xl p-8 md:p-12 lg:p-16 text-center overflow-hidden">
+        {/* Corner tech accents */}
+        <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-primary/30" />
+        <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-primary/30" />
+        
+        <h2 className="text-4xl md:text-5xl font-bold text-gold mb-8 glow-text relative">
           Vamos Conversar
         </h2>
         

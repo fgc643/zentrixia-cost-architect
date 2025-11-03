@@ -3,8 +3,12 @@ import founderImage from "@/assets/flavio-silva.jpeg";
 export const Founder = () => {
   return (
     <section className="max-w-6xl mx-auto px-4 py-20">
-      <div className="bg-card/30 backdrop-blur-sm border-2 border-primary/20 rounded-3xl p-8 md:p-12 lg:p-16">
-        <div className="grid md:grid-cols-[300px_1fr] gap-12 items-center">
+      <div className="relative bg-card/30 backdrop-blur-sm border-2 border-primary/20 rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
+        {/* Tech corner accents */}
+        <div className="absolute top-0 left-0 w-24 h-24 border-t-2 border-l-2 border-primary/20" />
+        <div className="absolute bottom-0 right-0 w-24 h-24 border-b-2 border-r-2 border-primary/20" />
+        
+        <div className="relative grid md:grid-cols-[300px_1fr] gap-12 items-center">
           {/* Photo */}
           <div className="mx-auto md:mx-0">
             <div className="relative w-64 h-64 md:w-72 md:h-72">

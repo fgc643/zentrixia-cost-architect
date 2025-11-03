@@ -39,9 +39,13 @@ export const Opportunities = () => {
 
   return (
     <section className="max-w-6xl mx-auto px-4 py-20">
-      <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-3xl p-8 md:p-12 lg:p-16">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gold mb-6">
+      <div className="relative bg-gradient-to-br from-primary/5 to-transparent rounded-3xl p-8 md:p-12 lg:p-16 border border-primary/10 overflow-hidden">
+        {/* Tech accents */}
+        <div className="absolute top-0 left-0 w-40 h-40 border-t-2 border-l-2 border-primary/20" />
+        <div className="absolute bottom-0 right-0 w-40 h-40 border-b-2 border-r-2 border-primary/20" />
+        
+        <div className="relative text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gold mb-6 glow-text">
             Aberto Para Oportunidades
           </h2>
           <p className="text-xl text-silver max-w-3xl mx-auto leading-relaxed">
