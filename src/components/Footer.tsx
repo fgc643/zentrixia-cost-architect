@@ -2,8 +2,8 @@ import zentrixiaLogo from "@/assets/zentrixia-logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-primary/20 py-12 text-center px-4">
-      <div className="max-w-6xl mx-auto space-y-8">
+    <footer className="border-t border-primary/20 py-16 text-center px-4">
+      <div className="max-w-6xl mx-auto space-y-6">
         {/* Logo */}
         <div className="flex justify-center">
           <img 
@@ -23,7 +23,7 @@ export const Footer = () => {
           Elite. Unrivaled. Yours.
         </p>
         
-        <p className="text-base text-silver pt-6">
+        <p className="text-lg text-foreground font-medium pt-4">
           © 2025 ZENTRIXIA. Todos os direitos reservados.
         </p>
       </div>
