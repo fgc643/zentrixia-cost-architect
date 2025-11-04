@@ -14,7 +14,7 @@ export const Footer = () => {
         </div>
         
         <div>
-          <p className="text-silver">
+          <p className="text-xl text-foreground">
             CNPJ: <span className="text-gold font-semibold">50.577.597/0001-00</span>
           </p>
         </div>
@@ -23,7 +23,7 @@ export const Footer = () => {
           Elite. Unrivaled. Yours.
         </p>
         
-        <p className="text-sm text-muted-foreground pt-6">
+        <p className="text-base text-silver pt-6">
           © 2025 ZENTRIXIA. Todos os direitos reservados.
         </p>
       </div>
