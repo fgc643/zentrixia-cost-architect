@@ -5,7 +5,7 @@ import { TechGrid } from "./TechGrid";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 py-20 overflow-x-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0"
@@ -28,7 +28,7 @@ export const Hero = () => {
       <TechGrid />
       
       {/* Floating Tech Icons */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-x-hidden">
         <Cpu className="absolute top-20 left-10 w-8 h-8 text-primary/20 animate-float" style={{ animationDelay: '0s' }} />
         <Server className="absolute top-40 right-20 w-10 h-10 text-primary/20 animate-float" style={{ animationDelay: '1s' }} />
         <Shield className="absolute bottom-32 left-20 w-9 h-9 text-primary/20 animate-float" style={{ animationDelay: '2s' }} />
@@ -44,7 +44,7 @@ export const Hero = () => {
             <div className="absolute inset-0 blur-3xl bg-gradient-radial from-primary/40 via-primary/20 to-transparent animate-glow-pulse" />
             <div className="absolute -inset-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent blur-2xl" />
             
-            <h1 className="relative text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter hero-title">
+            <h1 className="relative text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter hero-title px-4">
               ZENTRIXIA
             </h1>
             
