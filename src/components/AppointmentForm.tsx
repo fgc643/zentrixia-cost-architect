@@ -99,15 +99,18 @@ export const AppointmentForm = () => {
                 {date ? format(date, "dd 'de' MMMM 'de' yyyy", { locale: ptBR }) : "Selecione uma data"}
               </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-auto p-0" align="start">
+            <PopoverContent className="w-auto p-0 bg-background border-primary" align="start">
               <Calendar
                 mode="single"
                 selected={date}
                 onSelect={setDate}
                 disabled={(date) => date < new Date()}
                 initialFocus
-                className="pointer-events-auto"
+                className="pointer-events-auto bg-card border-0 rounded-md"
                 locale={ptBR}
+                modifiersClassNames={{
+                  selected: "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
+                }}
               />
             </PopoverContent>
           </Popover>
