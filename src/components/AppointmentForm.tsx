@@ -41,12 +41,8 @@ export const AppointmentForm = () => {
 
     const whatsappUrl = `https://wa.me/5511932071021?text=${encodeURIComponent(whatsappMessage)}`;
     
-    window.open(whatsappUrl, '_blank');
-    
-    toast({
-      title: "Redirecionando para WhatsApp",
-      description: "Você será redirecionado para confirmar o agendamento via WhatsApp."
-    });
+    // Redireciona diretamente para o WhatsApp
+    window.location.href = whatsappUrl;
   };
 
   const timeSlots = [
