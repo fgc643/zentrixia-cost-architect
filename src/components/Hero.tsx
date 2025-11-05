@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Linkedin, Cpu, Server, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import zentrixiaLogo from "@/assets/zentrixia-logo-new.png";
 import { TechGrid } from "./TechGrid";
 
 export const Hero = () => {
@@ -45,18 +44,16 @@ export const Hero = () => {
             <div className="absolute inset-0 blur-3xl bg-gradient-radial from-primary/40 via-primary/20 to-transparent animate-glow-pulse" />
             <div className="absolute -inset-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent blur-2xl" />
             
-            <img 
-              src={zentrixiaLogo} 
-              alt="ZENTRIXIA - Elite. Unrivaled. Yours." 
-              className="relative w-full max-w-3xl h-auto mx-auto animate-glow-pulse"
-              style={{
-                filter: 'drop-shadow(0 0 30px hsla(45, 100%, 50%, 0.8)) drop-shadow(0 0 60px hsla(45, 100%, 50%, 0.5))'
-              }}
-            />
+            <h1 className="relative text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter hero-title">
+              ZENTRIXIA
+            </h1>
             
             {/* Bottom shine */}
             <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary to-transparent blur-sm" />
           </div>
+          <p className="text-xl md:text-2xl text-silver italic tracking-wider font-light">
+            Elite. Unrivaled. Yours.
+          </p>
         </div>
         
         {/* Headline */}
