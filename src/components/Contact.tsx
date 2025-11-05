@@ -1,16 +1,35 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, MessageCircle, Calendar } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, MessageCircle } from "lucide-react";
+import { AppointmentForm } from "./AppointmentForm";
+
 
 export const Contact = () => {
   return (
-    <section className="max-w-4xl mx-auto px-4 py-20">
-      <div className="relative bg-card/30 backdrop-blur-sm border-2 border-primary rounded-3xl p-8 md:p-12 lg:p-16 text-center overflow-hidden">
+    <section className="max-w-6xl mx-auto px-4 py-20 space-y-12">
+      {/* Formulário de Agendamento */}
+      <div className="relative bg-card/30 backdrop-blur-sm border-2 border-primary rounded-3xl p-8 md:p-12 overflow-hidden">
         {/* Corner tech accents */}
         <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-primary/30" />
         <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-primary/30" />
         
-        <h2 className="text-4xl md:text-5xl font-bold text-gold mb-8 glow-text relative">
-          Vamos Conversar
+        <h2 className="text-4xl md:text-5xl font-bold text-gold mb-4 glow-text text-center relative">
+          Agende uma Conversa
+        </h2>
+        <p className="text-silver text-center mb-10 text-lg">
+          Escolha a melhor data e horário para conversarmos sobre suas necessidades
+        </p>
+        
+        <AppointmentForm />
+      </div>
+
+      {/* Informações de Contato */}
+      <div className="relative bg-card/30 backdrop-blur-sm border-2 border-primary rounded-3xl p-8 md:p-12 text-center overflow-hidden">
+        {/* Corner tech accents */}
+        <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-primary/30" />
+        <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-primary/30" />
+        
+        <h2 className="text-3xl md:text-4xl font-bold text-gold mb-8 glow-text relative">
+          Outras Formas de Contato
         </h2>
         
         <div className="space-y-4 text-lg md:text-xl mb-10">
@@ -42,7 +61,7 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             variant="elite" 
             size="lg"
@@ -73,22 +92,6 @@ export const Contact = () => {
             </a>
           </Button>
         </div>
-        
-        <Button 
-          variant="premium" 
-          size="lg"
-          asChild
-          className="w-full sm:w-auto gap-2"
-        >
-          <a 
-            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Conversa+Estratégica+ZENTRIXIA&details=Reunião+agendada+via+site+ZENTRIXIA+para+discutir+oportunidades+estratégicas.&add=contato@zentrixia.com.br&reminder=30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Calendar className="w-5 h-5" />
-            Agendar Conversa
-          </a>
-        </Button>
       </div>
     </section>
   );
