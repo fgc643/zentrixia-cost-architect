@@ -1,4 +1,4 @@
-import zentrixiaLogo from "@/assets/zentrixia-logo.png";
+import zentrixiaLogo from "@/assets/zentrixia-logo-new.png";
 
 export const Footer = () => {
   return (

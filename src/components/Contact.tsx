@@ -78,10 +78,10 @@ export const Contact = () => {
           variant="premium" 
           size="lg"
           asChild
-          className="w-full sm:w-auto"
+          className="w-full sm:w-auto gap-2"
         >
           <a 
-            href="https://wa.me/5511932071021?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20uma%20oportunidade%20estratégica"
+            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Conversa+Estratégica+ZENTRIXIA&details=Reunião+agendada+via+site+ZENTRIXIA+para+discutir+oportunidades+estratégicas.&add=contato@zentrixia.com.br&reminder=30"
             target="_blank"
             rel="noopener noreferrer"
           >
