@@ -41,15 +41,15 @@ export const Hero = () => {
         <div className="space-y-4 animate-fade-in-down">
           <div className="relative inline-block">
             {/* Multiple glow layers */}
-            <!-- <div className="absolute inset-0 blur-3xl bg-gradient-radial from-primary/40 via-primary/20 to-transparent animate-glow-pulse" />
-            <!-- <div className="absolute -inset-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent blur-2xl" />
+            <div className="absolute inset-0 blur-3xl bg-gradient-radial from-primary/40 via-primary/20 to-transparent animate-glow-pulse" />
+            <div className="absolute -inset-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent blur-2xl" />
             
             <h1 className="relative text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter hero-title px-4">
               ZENTRIXIA
             </h1>
             
             {/* Bottom shine */}
-            <!-- <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary to-transparent blur-sm" />
+            <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary to-transparent blur-sm" />
           </div>
           <p className="text-xl md:text-2xl text-silver italic tracking-wider font-light">
             Elite. Unrivaled. Yours.
